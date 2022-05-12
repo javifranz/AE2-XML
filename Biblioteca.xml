@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<documento>
+  <libro>
+     <Id>L0001</Id>
+     <tipo_clase>Novela</tipo_clase>
+     <titulo>La Comunidad del Anillo</titulo>
+     <paginas_total> 256 </paginas_total>
+     <sinopsis>El joven hobbit Frodo Bolsón emprende, en compañía de sus amigos, un peligroso
+        viaje a Mordor para destruir el Anillo Único.
+     </sinopsis>
+     <indice>
+        Capítulo 1..... 35
+        Capítulo 2..... 59
+        Capítulo 3..... 85
+        Capítulo 4..... 108
+        Capítulo 5..... 122
+        Capítulo 6..... 135
+        Capítulo 7..... 151
+        Capítulo 8..... 165
+        Capítulo 9..... 181
+        Capítulo 10.... 197
+        Capítulo 11.... 211
+        Capítulo 12.... 235
+     </indice>
+     <capitulos>
+         <cap_1>Una reunión muy esperada</cap_1>
+         <cap_2>La sombra del pasado</cap_2>
+         <cap_3>Tres es compañía</cap_3>
+         <cap_4>Un atajo hacia los hongos</cap_4>
+         <cap_5>Conspiración desenmascarada</cap_5>
+         <cap_6>El Bosque Viejo</cap_6>
+         <cap_7>En casa de Tom Bobadil</cap_7>
+         <cap_8>Niebla en Las Quebradas de Los Túmulos</cap_8>
+         <cap_9>Bajo la Enseña de El Poney Pisador</cap_9>
+         <cap_10>Trancos</cap_10>
+         <cap_11>Un cuchillo en la oscuridad</cap_11>
+         <cap_12>Huyendo hacia el Vado</cap_12>
+     </capitulos>
+  </libro>
+
+  <revista>
+    <Id>R0001</Id>
+    <tipo_clase>Otras</tipo_clase>
+    <titulo>Retro Gamer</titulo>
+    <paginas_total> 116 </paginas_total>
+    <numero>33</numero>
+    
+    <indice>
+       03.... Un Tributo a Paco Menéndez
+       06.... Nueva Game &amp; Watch
+       08.... Cierra el salón arcade de Sega
+       09.... Libros
+       10.... Alex Kidd in a Miracle World
+       22.... 30 años de Monkey Island
+       44.... Master System. Sus mejores juegos
+       54.... Game Gear, la portátil de Sega
+       64.... El retorno de Pokemon
+       72.... Guía de Compras. Game Boy Color
+       78.... Los 00s. Los años de los cibercafés
+       84.... ...Windjammers
+       87.... ...Double Dragon
+       90.... ...Half Life
+       94.... ...Daytona USA
+       95.... ...Heimdall
+       97.... ...La saga Tony Hawk
+       100... ...Out Run
+       102... ...Broken Sword
+       105... ...The Legend of Zelda
+       108... ...Crazy Taxi
+       112... ...Radical Bikers
+       114... Final Fantasy VII
+    </indice>
+    <secciones>
+        <sec_1>Retroradar. 7 Páginas </sec_1>
+        <sec_2>Reportajes. 74 Páginas</sec_2>
+        <sec_3>La historia de... 30 Páginas</sec_3>
+        <sec_4>Pantalla Final. 3 Páginas</sec_4>
+    </secciones>
+    
+ </revista>
+
+ <periodico>
+    <Id>P0001</Id>
+    <tipo_clase>Nacional</tipo_clase>
+    <titulo>El Mundo</titulo>
+    <paginas_total> 50 </paginas_total>
+    <fecha_publi>11 de Mayo de 2022</fecha_publi>
+    
+    <indice>
+       02.... EDITORIAL. Alcaraz, un fuera de serie (Alberto Di Lolli)
+       03.... OPINION. La guerra de los Depp (Esperanza Ruiz)
+       04.... OPINION. La mentira y la posverdad (Miguel Ángel Quintana Paz)
+       05.... OPINION. El menoscabo del mérito (Xavier Pericay)
+       06.... ECONOMIA. El Elon Musk empresario (Pablo Pardo)
+       08.... ECONOMIA. Toyota dispara un 27% su beneficio (Lorenzo Bernaldo de Quirós)
+       12.... ECONOMIA. La banca cree que es buen momento para hipotecarse (Rocío Regidor)
+       14.... INTERNACIONAL. Nueva Zelanda abrirá sus fronteras al 31 de Julio (Petra Fernández)
+       17.... INTERNACIONAL. Finlandia presentará su solicitud de adhesión el Lunes (Casimiro Antúnez)
+       20.... INTERNACIONAL. Arabia Saudí baja el precio del petróleo en Europa (Alejandra García)
+       24.... DEPORTES. El Betis no afloja (Inma Valencia)
+       26.... DEPORTES. Giro de Italia. Juanpe López hace historia (Lucas Sáez)
+       29.... DEPORTES. Guardiola ya tiene a Haaland. (Francisco Cabezas)
+       35.... CULTURA. La precuela de Juego de Tronos estrena trailer (Esther Miras)
+       37.... CULTURA. El Festival de San Isidro anuncia sus conciertos (Adolfo Benítez)
+       39.... CULTURA. Favoritos para Eurovision 2022 (Rosa Peláez)
+       42.... CIENCIA. Eclipse lunar del 16 de Mayo. Lo que debes saber (Alex Ruiz)
+       44.... CIENCIA. Descubren 30 exocometas en Beta Pictoris (Ana Miralles)
+       48.... CIENCIA. Un problema de software obliga a retirar miles de coches eléctricos (Lucía Sánchez)
+
+    </indice>
+    <secciones>
+        <sec_1>Opinión </sec_1>
+        <sec_2>Economía </sec_2>
+        <sec_3>Internacional </sec_3>
+        <sec_4>Deportes </sec_4>
+        <sec_5>Cultura </sec_5>
+        <sec_6>Ciencia </sec_6>
+    </secciones>
+    
+</periodico>
+</documento>
