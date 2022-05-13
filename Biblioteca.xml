@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<documento>
+<biblioteca>
 
   <libro>
      <Id>L0001</Id>
@@ -119,4 +119,4 @@
     </secciones>
     
 </periodico>
-</documento>
+</biblioteca>
