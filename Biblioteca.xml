@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <documento>
+
   <libro>
      <Id>L0001</Id>
      <tipo_clase>Novela</tipo_clase>
