@@ -18,33 +18,37 @@
          </sinopsis>
          <indice>
             <capitulo id = "1">
-               <titulo_capitulo>capitulo 1</titulo_capitulo>
-               <paginas_capitulo>45</paginas_capitulo>
+               <titulo_capitulo>1. Una reunión muy esperada</titulo_capitulo>
+               <paginas_capitulo>24</paginas_capitulo>
                <contenido>enlace a info</contenido>
              </capitulo>
-             
-            
+             <capitulo id = "2">
+               <titulo_capitulo>2. La sombra del pasado</titulo_capitulo>
+               <paginas_capitulo>26</paginas_capitulo>
+               <contenido>enlace a info</contenido>
+             </capitulo>
+             <capitulo id = "3">
+               <titulo_capitulo>3. Tres es Compañía</titulo_capitulo>
+               <paginas_capitulo>23</paginas_capitulo>
+               <contenido>enlace a info</contenido>
+             </capitulo>
+             <capitulo id = "4">
+               <titulo_capitulo>Un atajo hacia los hongos</titulo_capitulo>
+               <paginas_capitulo>14</paginas_capitulo>
+               <contenido>enlace a info</contenido>
+             </capitulo>
+             <capitulo id = "5">
+               <titulo_capitulo>Conspiración desenmascarada</titulo_capitulo>
+               <paginas_capitulo>17</paginas_capitulo>
+               <contenido>enlace a info</contenido>
+             </capitulo>
+             <capitulo id = "6">
+               <titulo_capitulo>El Bosque Viejo</titulo_capitulo>
+               <paginas_capitulo>16</paginas_capitulo>
+               <contenido>enlace a info</contenido>
+             </capitulo>
          </indice>
-    
-         <!--<capitulos  
-            
-            NO SE, DEJE AQUI ESTO POR IS HABIA DUDA
-            Y POR SI SE NECESITABA
-            
-            >
-             <cap_1>Una reunión muy esperada</cap_1>
-             <cap_2>La sombra del pasado</cap_2>
-             <cap_3>Tres es compañía</cap_3>
-             <cap_4>Un atajo hacia los hongos</cap_4>
-             <cap_5>Conspiración desenmascarada</cap_5>
-             <cap_6>El Bosque Viejo</cap_6>
-             <cap_7>En casa de Tom Bobadil</cap_7>
-             <cap_8>Niebla en Las Quebradas de Los Túmulos</cap_8>
-             <cap_9>Bajo la Enseña de El Poney Pisador</cap_9>
-             <cap_10>Trancos</cap_10>
-             <cap_11>Un cuchillo en la oscuridad</cap_11>
-             <cap_12>Huyendo hacia el Vado</cap_12>
-         </capitulos>  -->
+
       </libro>
 
 
@@ -92,10 +96,23 @@
          114... Final Fantasy VII
       </indice_rev>
     
-          <seccion id= "1">
+          <seccion id= "Retroradar">
              <numero_paginas_sec>3</numero_paginas_sec>
              <contenido_sec>enlace a contenido</contenido_sec>
           </seccion>
+          <seccion id= "Reportajes">
+            <numero_paginas_sec>75</numero_paginas_sec>
+            <contenido_sec>enlace a contenido</contenido_sec>
+         </seccion>
+         <seccion id= "La Historia De...">
+            <numero_paginas_sec>30</numero_paginas_sec>
+            <contenido_sec>enlace a contenido</contenido_sec>
+         </seccion>
+         <seccion id= "Pantalla Final">
+            <numero_paginas_sec>6</numero_paginas_sec>
+            <contenido_sec>enlace a contenido</contenido_sec>
+         </seccion>
+          
       
       
    </revista>
@@ -117,9 +134,6 @@
       <fecha_publi>11 de Mayo de 2022</fecha_publi>
 
 
-
-      <!--creo que el indice se pondria de otra forma pero ahora mismo
-      no se me ocurre nada-->
       <indice_per>
          02.... EDITORIAL. Alcaraz, un fuera de serie (Alberto Di Lolli)
          03.... OPINION. La guerra de los Depp (Esperanza Ruiz)
@@ -144,12 +158,40 @@
       </indice_per>
       <secciones>
           <seccion_per>
-             <tipo_seccion id = "economica">Economica</tipo_seccion>
+             <tipo_seccion id = "Economica">a</tipo_seccion>
              <articulo>
-                <autor>juan</autor>
+                <autor>Daniel Lacalle</autor>
                 <contenido_per>enlace a contenido</contenido_per>
              </articulo>
            </seccion_per>
+           <seccion_per>
+            <tipo_seccion id = "Opinion"></tipo_seccion>
+            <articulo>
+               <autor>Miguel Ángel Quintana Paz</autor>
+               <contenido_per>enlace a contenido</contenido_per>
+            </articulo>
+          </seccion_per>
+          <seccion_per>
+            <tipo_seccion id = "Deportes"></tipo_seccion>
+            <articulo>
+               <autor>Julen Uralde</autor>
+               <contenido_per>enlace a contenido</contenido_per>
+            </articulo>
+          </seccion_per>
+          <seccion_per>
+            <tipo_seccion id = "Nacional"></tipo_seccion>
+            <articulo>
+               <autor>Xavier Pericay</autor>
+               <contenido_per>enlace a contenido</contenido_per>
+            </articulo>
+         </seccion_per>
+         <seccion_per>
+           <tipo_seccion id = "Internacional"></tipo_seccion>
+           <articulo>
+              <autor>Petra Fernández</autor>
+              <contenido_per>enlace a contenido</contenido_per>
+           </articulo>
+         </seccion_per>
       </secciones>
       
      </periodico>
