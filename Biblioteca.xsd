@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+
+    
+    <element name="libro">
+        <complexType>
+            <sequence>
+                <element name="tipo_clase" type="string"/>
+                <element name="titulo" type="integer" />
+                <element name="paginas_total" type="double" />
+                <element name="sinopsis" type="boolean" />
+                <element name="indice" >
+                    <complexType>
+                        <sequence>
+                            <element name = "capitulo">
+                                <complexType>
+                                    <sequence>
+                                        <element name= "titulo_capitulo" type = "string"/>
+                                        <element name= "paginas_capitulo" type = "integer"/>
+                                    </sequence>
+                                </complexType>
+                            </element>
+                        </sequence>
+                    </complexType>
+                </element>
+            </sequence>
+            <attribute name="id" type="integer" use="required"/>
+        </complexType>
+    </element>
+
+
+
+    <element name="revista">
+        <complexType>
+            <sequence>
+                <element name="tipo_clase_rev" type="string"/>
+                <element name="titulo_rev" type = "string"/>
+                <element name="paginas_total_rev" type="integer"/>
+                <element name="numero" type="integer"/>
+                <element name="indice_rev" type="string"/>
+                <element name="seccion">
+                    <complexType>
+                        <sequence>
+                            <element name="numero_paginas_sec" type="integer"/>
+                            <element name="contenid_rev" type= "string"/>
+                        </sequence>
+                    </complexType>
+                </element>
+            </sequence>
+            <attribute name="id" type="integer" use="required"/>
+        </complexType>
+    </element>
+
+
+
+    <element name="periodico">
+        <complexType>
+            <sequence>
+                <element name="tipo_clase_per" type="string"/>
+                <element name="titulo_per" type="string"/>
+                <element name="paginas_total_per" type="integer"/>
+                <element name="fecha_publi" type="date"/>
+                <element name="indice_per" type="string"/>
+                <element name="secciones">
+                    <complexType>
+                        <sequence>
+                            <element name="seccion_per">
+                                <complexType>
+                                    <sequence>
+                                        <element name= "tipo_seccion" type="string"/>
+                                        <element name="articulo">
+                                            <complexType>
+                                                <sequence>
+                                                    <element name="autor" type="string"/>
+                                                    <element name="contenido_per" type="string"/>
+                                                </sequence>
+                                            </complexType>
+                                        </element>
+                                    </sequence>
+                                </complexType>
+                            </element>
+                        </sequence>
+                    </complexType>
+                </element>
+            </sequence>
+            <attribute name="id" type="integer" use="required"/>
+        </complexType>
+    </element>
+
+</schema>

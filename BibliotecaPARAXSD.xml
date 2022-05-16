@@ -1,89 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!DOCTYPE biblioteca [
-    <!ELEMENT biblioteca (libros, revistas, periodicos)>
-
-    <!ELEMENT libros (libro+)>
-    <!ELEMENT revistas (revista+)>
-    <!ELEMENT periodicos (periodico+)>
-    
-    <!--dtd de libro-->
-    <!--cambie el id a esa forma de ponerlo para que sea lo mas parecido
-    a la forma de poner el id del ejercicio que vimos-->
-    <!ELEMENT libro (tipo_clase, titulo,paginas_total,sinopsis, indice)>
-    <!ATTLIST libro id CDATA #REQUIRED>
-
-    <!ELEMENT tipo_clase (#PCDATA)>
-    <!ELEMENT titulo (#PCDATA)>
-    <!ELEMENT paginas_total (#PCDATA)>
-    <!ELEMENT sinopsis (#PCDATA)>
-    <!ELEMENT indice (capitulo+)>
-
-    <!ELEMENT capitulo (titulo_capitulo,paginas_capitulo,contenido)>
-    <!ATTLIST capitulo id CDATA #REQUIRED>
-
-    <!ELEMENT titulo_capitulo (#PCDATA)>
-    <!ELEMENT paginas_capitulo (#PCDATA)>
-    <!ELEMENT contenido (#PCDATA)>
 
 
-
-    <!--dtd de revista-->
-    <!--tuve que cambiar varias variables diferenciandoals de libro
-    anadiendo _rev para que el sistema no las confundiese con
-    las de libro-->
-    <!ELEMENT revista (tipo_clase_rev, titulo_rev,paginas_total_rev,
-    numero, indice_rev, seccion)>
-    <!ATTLIST revista id CDATA #REQUIRED>
-
-    <!ELEMENT tipo_clase_rev (#PCDATA)>
-    <!ELEMENT titulo_rev (#PCDATA)>
-    <!ELEMENT paginas_total_rev (#PCDATA)>
-    <!ELEMENT  numero (#PCDATA)>
-    <!ELEMENT indice_rev (#PCDATA)>
-
-    <!ELEMENT seccion (numero_paginas_sec,contenido_sec)>
-    <!ATTLIST seccion id CDATA #REQUIRED>
-
-    
-    <!ELEMENT numero_paginas_sec (#PCDATA)>
-    <!ELEMENT contenido_sec (#PCDATA)>
-    
-
-   <!--dtd de PERIODICO-->
-
-   <!ELEMENT periodico (tipo_clase_per, titulo_per,paginas_total_per,
-   fecha_publi, indice_per, secciones)>
-   <!ATTLIST periodico id CDATA #REQUIRED>
-
-   <!ELEMENT tipo_clase_per (#PCDATA)>
-   <!ELEMENT titulo_per (#PCDATA)>
-   <!ELEMENT paginas_total_per (#PCDATA)>
-   <!ELEMENT fecha_publi (#PCDATA)>
-   <!ELEMENT indice_per (#PCDATA)>
-   <!ELEMENT secciones (seccion_per+)>
- 
-
-   
-   <!ELEMENT seccion_per (tipo_seccion, articulo)>
-   <!ATTLIST tipo_seccion id CDATA #REQUIRED>
-
-   <!ELEMENT tipo_seccion (#PCDATA)>
-
-   
-  
-   <!ELEMENT articulo (autor,contenido_per)>
-
-   <!ELEMENT autor (#PCDATA)>
-   <!ELEMENT contenido_per (#PCDATA)>
-]>
-
-
-
-
-<biblioteca>
+<biblioteca  >
    <libros>
 
-      <libro id= "L0001">
+      <libro 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+   xsi:noNamespaceSchemaLocation= "Biblioteca.xsd"
+      
+      id= "L0001">
    
          <tipo_clase>Novela</tipo_clase>
          <titulo>La Comunidad del Anillo</titulo>
@@ -130,7 +55,11 @@
 
 
 <revistas>
-   <revista id = "R0001">
+   <revista 
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+   xsi:noNamespaceSchemaLocation= "Biblioteca.xsd"
+
+   id = "R0001">
      
       <tipo_clase_rev>otros</tipo_clase_rev>
       <titulo_rev>Retro Gamer</titulo_rev>
@@ -175,7 +104,12 @@
 
   
 <periodicos>
-   <periodico id= "P0001">
+   <periodico 
+   
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+   xsi:noNamespaceSchemaLocation= "Biblioteca.xsd"
+
+   id= "P0001">
       
       <tipo_clase_per>Nacional</tipo_clase_per>
       <titulo_per>El Mundo</titulo_per>
