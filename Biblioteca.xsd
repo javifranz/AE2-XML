@@ -4,8 +4,20 @@
     
     <element name="libro">
         <complexType>
+            
             <sequence>
-                <element name="tipo_clase" type="string"/>
+
+                <element name="tipo_clase">
+                    <simpleType>
+                        <restriction base = "string">
+                            <enumeration value="Novela"></enumeration>
+                            <enumeration value="Infantil"></enumeration>
+                            <enumeration value="Didactico"></enumeration>
+                        </restriction>
+                    </simpleType>
+                    </element>
+                   
+               
                 <element name="titulo" type="integer" />
                 <element name="paginas_total" type="double" />
                 <element name="sinopsis" type="boolean" />
@@ -33,7 +45,20 @@
     <element name="revista">
         <complexType>
             <sequence>
-                <element name="tipo_clase_rev" type="string"/>
+
+                <element name="tipo_clase_rev">
+                    <simpleType>
+                        <restriction base = "string">
+                            <enumeration value="Informatica"></enumeration>
+                            <enumeration value="Corazon"></enumeration>
+                            <enumeration value="Coches"></enumeration>
+                            <enumeration value="Investigacion"></enumeration>
+                            <enumeration value="Otras"></enumeration>
+                        </restriction>
+                    </simpleType>
+                    </element>
+
+                
                 <element name="titulo_rev" type = "string"/>
                 <element name="paginas_total_rev" type="integer"/>
                 <element name="numero" type="integer"/>
@@ -56,7 +81,19 @@
     <element name="periodico">
         <complexType>
             <sequence>
-                <element name="tipo_clase_per" type="string"/>
+             
+
+
+                <element name="tipo_clase_per">
+                    <simpleType>
+                        <restriction base = "string">
+                            <enumeration value="Nacional"></enumeration>
+                            <enumeration value="Internacional"></enumeration>
+                        </restriction>
+                    </simpleType>
+                </element>
+
+
                 <element name="titulo_per" type="string"/>
                 <element name="paginas_total_per" type="integer"/>
                 <element name="fecha_publi" type="date"/>
@@ -67,7 +104,23 @@
                             <element name="seccion_per">
                                 <complexType>
                                     <sequence>
-                                        <element name= "tipo_seccion" type="string"/>
+                                        
+
+                                        
+                                         <element name="tipo_seccion">
+                                          <simpleType>
+                                            <restriction base = "string">
+                                                <enumeration value="Economica"></enumeration>
+                                                 <enumeration value="Opinion"></enumeration>
+                                                 <enumeration value="Deportes"></enumeration>
+                                                 <enumeration value="Nacional"></enumeration>
+                                                 <enumeration value="Internacional"></enumeration>
+                                             </restriction>
+                                         </simpleType>
+                                         </element>
+
+
+                                        
                                         <element name="articulo">
                                             <complexType>
                                                 <sequence>
