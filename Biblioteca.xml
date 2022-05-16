@@ -40,9 +40,10 @@
     <!ELEMENT paginas_total_rev (#PCDATA)>
     <!ELEMENT  numero (#PCDATA)>
     <!ELEMENT indice_rev (#PCDATA)>
+    <!ELEMENT seccion (seccion_rev+)>
 
-    <!ELEMENT seccion (numero_paginas_sec,contenido_sec)>
-    <!ATTLIST seccion id CDATA #REQUIRED>
+    <!ELEMENT seccion_rev (numero_paginas_sec, contenido_sec)>
+    <!ATTLIST seccion_rev id CDATA #REQUIRED>
 
     
     <!ELEMENT numero_paginas_sec (#PCDATA)>
@@ -168,23 +169,27 @@
          112... ...Radical Bikers
          114... Final Fantasy VII
       </indice_rev>
-    
-          <seccion id= "Retroradar">
-             <numero_paginas_sec>9</numero_paginas_sec>
-             <contenido_sec>enlace a contenido</contenido_sec>
-          </seccion>
-          <seccion id= "Reportajes">
-            <numero_paginas_sec>70</numero_paginas_sec>
-            <contenido_sec>enlace a contenido</contenido_sec>
-         </seccion>
-         <seccion id= "La historia de...">
-            <numero_paginas_sec>30</numero_paginas_sec>
-            <contenido_sec>enlace a contenido</contenido_sec>
-         </seccion>
-         <seccion id= "Pantalla final">
+
+      <seccion>
+         <seccion_rev id="Retroradar">
             <numero_paginas_sec>6</numero_paginas_sec>
-            <contenido_sec>enlace a contenido</contenido_sec>
-         </seccion>
+            <contenido_sec>Enlace a contenido</contenido_sec>
+         </seccion_rev>
+         <seccion_rev id="Reportajes">
+            <numero_paginas_sec>75</numero_paginas_sec>
+            <contenido_sec>Enlace a contenido</contenido_sec>
+         </seccion_rev>
+         <seccion_rev id="La Historia De...">
+            <numero_paginas_sec>30</numero_paginas_sec>
+            <contenido_sec>Enlace a contenido</contenido_sec>
+         </seccion_rev>
+         <seccion_rev id="Pantalla Final">
+            <numero_paginas_sec>6</numero_paginas_sec>
+            <contenido_sec>Enlace a contenido</contenido_sec>
+         </seccion_rev>
+      </seccion>
+
+
       
    </revista>
 
@@ -221,49 +226,47 @@
          48.... CIENCIA. Un problema de software obliga a retirar miles de coches eléctricos (Lucía Sánchez)
   
       </indice_per>
-
+      
       <secciones>
           <seccion_per>
-             <tipo_seccion id = "Económica"></tipo_seccion>
+             <tipo_seccion id="Economica"></tipo_seccion>
              <articulo>
-                <autor>Pablo Pardo</autor>
-                <contenido_per>enlace a contenido</contenido_per>
+                <autor>Daniel Lacalle</autor>
+                <contenido_per>Enlace a contenido</contenido_per>
              </articulo>
-             <articulo>
-               <autor>Rocío Regidor</autor>
-               <contenido_per>enlace a contenido</contenido_per>
-            </articulo>
-            <tipo_seccion id = "Opinión"></tipo_seccion>
+          </seccion_per>
+          <seccion_per>
+            <tipo_seccion id="Opinión"></tipo_seccion>
             <articulo>
-               <autor>Esperanza Ruiz/autor>
-               <contenido_per>enlace a contenido</contenido_per>
+               <autor>Miguel Ángel Quintana Paz</autor>
+               <contenido_per>Enlace a contenido</contenido_per>
             </articulo>
+         </seccion_per>
+         <seccion_per>
+            <tipo_seccion id="Deportes"></tipo_seccion>
             <articulo>
-              <autor>Miguel Ángel Quintana Paz</autor>
-              <contenido_per>enlace a contenido</contenido_per>
-           </articulo>
-           </seccion_per>
-           <tipo_seccion id = "Deportes"></tipo_seccion>
-           <articulo>
-              <autor>Inma Valencia</autor>
-              <contenido_per>enlace a contenido</contenido_per>
-           </articulo>
-           <tipo_seccion id = "Nacional"></tipo_seccion>
-           <articulo>
-              <autor>Francisco Cabezaa</autor>
-              <contenido_per>enlace a contenido</contenido_per>
-           </articulo>
-           <articulo>
-             <autor>Daniel Lacalle</autor>
-             <contenido_per>enlace a contenido</contenido_per>
-          </articulo>
-          <tipo_seccion id = "Internacional">Economica</tipo_seccion>
-          <articulo>
-             <autor>Casimiro García</autor>
-             <contenido_per>enlace a contenido</contenido_per>
-          </articulo>
+               <autor>Julen Uralde</autor>
+               <contenido_per>Enlace a contenido</contenido_per>
+            </articulo>
+         </seccion_per>
+         <seccion_per>
+            <tipo_seccion id="Nacional"></tipo_seccion>
+            <articulo>
+               <autor>Xavier Pericay</autor>
+               <contenido_per>Enlace a contenido</contenido_per>
+            </articulo>
+         </seccion_per>
+         <seccion_per>
+            <tipo_seccion id="Internacional"></tipo_seccion>
+            <articulo>
+               <autor>Xavier Pericay</autor>
+               <contenido_per>Enlace a contenido</contenido_per>
+            </articulo>
+         </seccion_per>
+
 
       </secciones>
+
       
      </periodico>
 
